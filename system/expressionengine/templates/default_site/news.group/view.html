@@ -1,0 +1,174 @@
+{embed=includes/document_head}
+
+<body id="www-clientURL-com" class="sect-news type-entry">
+
+<div id="page">
+
+	<div id="mast">
+		<div class="inner">
+			<h1><a href="#">Channel University</a></h1>
+			<ul class="nav">
+				<li class="home"><a href="#">Home</a></li>
+				<li class="about"><a href="#">About</a></li>
+				<li class="news"><a href="#">News</a></li>
+				<li class="apply"><a href="#">Apply</a></li>
+				<li class="contact"><a href="#">Contact</a></li>
+			</ul><!-- /end ul.nav -->
+			<form id="search" action="">
+				<input type="text" name="keywords" value="" />
+				<input type="submit" id="search-submit" value="Go" />
+			</form><!-- /end form#search -->
+		</div><!-- /end .inner -->
+	</div><!-- /end #mast -->
+
+	<div id="content">
+		<div id="primary">
+			{exp:channel:entries channel="news" limit="one" status="Homepage Featured|Homepage secondary|open"}
+			
+			<p class="photo"><img src="/FPO/photo-internal.jpg" alt="Photo placeholder" width="700" height="250" /></p>
+
+			<div class="entry">
+				<h2>
+					{title}
+				</h2>
+
+				<div class="info">
+					<em>{entry_date format="%F %d, %Y"}</em>
+					<a href="#">{comment_total} Comments</a>
+				</div><!-- /end .info -->
+	
+				<div class="content">
+				{news_body}
+				</div><!-- /end .content -->
+			</div><!-- /end .entry -->
+			
+
+			<div class="comments">
+				<h3>There are {comment_total} comments for this entry. <a href="#leave-a-comment">Leave a comment below &raquo;</a></h3>
+				
+				{/exp:channel:entries}
+				
+				
+				<ol class="comments-list">
+					
+					{exp:comment:entries channel="news"}
+										
+					<li>
+						<div class="info">
+							<em><a href="#">{name}</a></em>
+							{comment_date format="%F %d, %Y"}
+						</div><!-- /end .info -->	
+						<div class="content">
+							<p>{comment}</p>
+						</div>				
+					</li>
+					
+					{/exp:comment:entries}
+					
+				</ol><!-- /end ol.comments-list -->
+				<h3 id="leave-a-comment">Leave a comment. <em>*Required</em></h3>
+				
+				{exp:comment:form form_class="comment-form"}
+								
+					<ul>
+						<li class="comment-name">
+							<div class="label">
+								<label for="form-name">Your Name*</label>
+							</div><!-- /end .label -->
+							<div class="input">
+								<input id="form-name" name="name" type="text" size="35" value="{name}" />
+							</div><!-- /end .input -->
+						</li><!-- /end .comment-name -->
+	
+						<li class="comment-email">
+							<div class="label">
+								<label for="form-email">Email*</label>
+							</div><!-- /end .label -->
+							<div class="input">
+								<input id="form-email" name="email" type="text" size="35" value="{email}"/>
+							</div><!-- /end .input -->
+						</li><!-- /end .comment-email -->
+	
+						<li class="comment-website">
+							<div class="label">
+								<label for="form-website">Website</label>
+							</div><!-- /end .label -->
+							<div class="input">
+								<input id="form-website" name="website" type="text" size="35" value="{url}" />
+							</div><!-- /end .input -->
+						</li><!-- /end .comment-website -->
+						
+						<li class="comment-content">
+							<div class="label">
+								<label for="form-content">Comment</label>
+							</div>
+							<div class="input">
+								<textarea id="form-content" name="comment" cols="40" rows="10" />{comment}</textarea>
+							</div>
+						</li>
+
+					</ul>
+					<input id="comment-submit" type="submit" value="Submit Comment" />
+				<!-- /end form.comment-form -->
+				
+				{/exp:comment:form}
+				
+				
+			</div><!-- /end .comments -->
+			<div class="related">
+				<h3>Related Entries</h3>
+				<ul>
+					<li>
+						<em>March 1, 2010</em>
+						<h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio consectetuer. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
+					</li>
+					<li>
+						<em>March 1, 2010</em>
+						<h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio consectetuer. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
+					</li>
+					<li class="last">
+						<em>March 1, 2010</em>
+						<h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio consectetuer. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
+					</li>
+				</ul>
+			</div><!-- /end .related -->
+		</div><!-- /end #primary -->
+		
+		<div id="additional">
+			<p class="feed-subscribe"><a href="#">Subscribe to Channel News</a></p>
+		
+			<div class="about">
+				<h2>About Channel University</h2>
+				<p class="last">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna. <a href="#">Learn more &raquo;</a></p>
+			</div><!-- /end .about -->
+		
+			<ul class="categories">
+				<li><a href="#">Lorem ipsum dolor</a></li>
+				<li><a href="#">Nullam malesuada erat semper</a></li>
+				<li><a href="#">Ipsum dolor sit amet</a></li>
+				<li><a href="#">Sit amet consectetuer</a></li>
+				<li class="last"><a href="#">Nullam malesuada erat semper</a></li>
+			</ul><!-- /end ul.categories -->
+		</div><!-- /end #additional -->
+	</div><!-- /end #content -->
+
+	<div id="footer">
+		<div class="inner">
+			<p class="copyright">&copy;2010 Channel University. All rights reserved. <a href="#">Back to top &uarr;</a></p>
+			<ul class="nav">
+				<li class="home"><a href="#">Home</a> <em>&#124;</em> </li>
+				<li class="about"><a href="#">About</a> <em>&#124;</em> </li>
+				<li class="news"><a href="#">News</a> <em>&#124;</em> </li>
+				<li class="apply"><a href="#">Apply</a> <em>&#124;</em> </li>
+				<li class="contact"><a href="#">Contact</a></li>
+			</ul>
+		</div><!-- /end .inner -->
+	</div><!-- /end #footer -->
+
+</div><!-- /end #page -->
+
+</body>
+</html>

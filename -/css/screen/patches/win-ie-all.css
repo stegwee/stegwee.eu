@@ -1,0 +1,21 @@
+/*-  SELF-CLEARING FLOATS
+----------------------------------------------------------------------*/
+.mod,
+#mast,
+#mast ul,
+#content,
+.comments ol li,
+.comment-form li,
+.feat-stories,
+.feat-stories ul,
+.testimonials ul,
+.related,
+.main,
+ul.categories li,
+ul.categories li a,
+body.type-entry .entry,
+ol.results li,
+#footer,
+#footer ul {
+	zoom: 1;
+}

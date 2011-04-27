@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/airbag/!svn/ver/3228/trunk/assets/tmpl/-/css/screen/patches
+END
+win-ie-all.css
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/airbag/!svn/ver/3228/trunk/assets/tmpl/-/css/screen/patches/win-ie-all.css
+END
+win-ie7.css
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/airbag/!svn/ver/3228/trunk/assets/tmpl/-/css/screen/patches/win-ie7.css
+END
+win-ie-old.css
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/airbag/!svn/ver/3228/trunk/assets/tmpl/-/css/screen/patches/win-ie-old.css
+END
+win-ie6-below.css
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/airbag/!svn/ver/3228/trunk/assets/tmpl/-/css/screen/patches/win-ie6-below.css
+END

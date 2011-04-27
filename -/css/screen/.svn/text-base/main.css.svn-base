@@ -1,0 +1,15 @@
+/*	[CLIENT NAME]: screen master
+	----------------------------
+	Author:		[CODER NAME] (http://happycog.com/)
+	Version:	yymmdd
+	Copyright:	(c) 2010 Happy Cog Studios until the contract is complete.
+			All rights reserved.
+*/
+
+/*-  CSS "libraries"
+----------------------------------------------------------------------*/
+@import url("reset.css");
+
+/*-  Core, patch-free design
+----------------------------------------------------------------------*/
+@import url("core.css");

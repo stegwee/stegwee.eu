@@ -1,0 +1,39 @@
+/*-  SELF-CLEARING FLOATS
+----------------------------------------------------------------------*/
+.mod:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/*-  BASE STYLES
+----------------------------------------------------------------------*/
+body {
+	background: #FFF;
+	color: #000;
+	font: normal 100% "Lucida Grande", Verdana, Geneva, Helvetica, Arial, sans-serif;
+}
+a:hover,
+a:focus {
+	text-decoration: underline;
+}
+abbr,
+acronym {
+	cursor: help;
+}
+input.text,
+textarea {
+	border: 1px solid #7C7C7C;
+	border-color: #7C7C7C #7C7C7C #C3C3C3 #C3C3C3;
+}
+hr,
+.skip,
+.ineffable {
+	left: -1000em;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 0;
+}
